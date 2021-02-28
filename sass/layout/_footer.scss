@@ -4,9 +4,17 @@
   font-size: 1.4rem;
   color: $color-grey-light-2;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo {
@@ -18,6 +26,11 @@
     border-top: 0.1rem solid rgba($color-grey-light-2, 1);
     padding-top: 1rem;
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__copyright {
@@ -25,6 +38,11 @@
     width: 75%;
     padding-top: 1rem;
     float: right;
+
+    @include respond(tab-port) {
+      width: 100%;
+      float: none;
+    }
   }
 
   &__list {
